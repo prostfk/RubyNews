@@ -1,0 +1,24 @@
+<h1>Articles</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pages.each do |page| %>
+      <tr>
+        <td>
+          <%= page.name %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_page_path(page) %>
+        </td>
+      </tr>
+
+    <% end %>
+  </tbody>
+
+</table>
