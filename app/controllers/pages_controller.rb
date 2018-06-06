@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  before_action :find_page_by_id, only: [:edit, :update]
+  before_action :find_page_by_id, only: [:edit, :update, :destroy]
 
   def new
     @page = Page.new
@@ -37,7 +37,11 @@ class PagesController < ApplicationController
   end
 
   def destroy
-
+    if @page.destroy
+      redirect_to "/latest_news"
+    else
+      redirect_to "/latest_news", error: "Something went wrong"
+    end
   end
 
 

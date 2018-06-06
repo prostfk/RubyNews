@@ -8,8 +8,11 @@ gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 gem "mysql2"
-gem 'sprockets', '3.6.3'
+# gem 'sprockets', '3.6.3'
 gem 'simple_form'
+gem 'devise'
+
+
 # gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
